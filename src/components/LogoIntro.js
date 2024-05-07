@@ -7,18 +7,24 @@ const LogoIntro = ({ scrollY }) => {
 
     useEffect(() => {
         const newFadeOpacity1 = Math.max(0, 1 - scrollY / 600);
-        const newFadeOpacity2 = Math.min(1, scrollY / 700);
         setFadeOpacity1(newFadeOpacity1);
-        setFadeOpacity2(newFadeOpacity2);
+
+        if (scrollY > 890) {
+            setFadeOpacity2(0);
+        } else {
+            const newFadeOpacity2 = Math.min(1, scrollY / 700);
+            setFadeOpacity2(newFadeOpacity2);
+        }
     }, [scrollY]);
 
     return (
         <Flex
-            width={"1440px"}
+            width={"100%"}
             height={"1024px"}
             zIndex={14}
             position={"relative"}
             justifyContent="center"
+            backgroundImage={"./parallaxTop/Grafika_bez_nazwy-2.png"}
         >
             <Image position="fixed" top={`239px`} width={"741px"} height={"212px"} opacity={fadeOpacity1} src="./logoIntro/ConnectLogo.png" />
             <Flex
@@ -45,23 +51,19 @@ const LogoIntro = ({ scrollY }) => {
             </Flex>
 
             <Flex
-                zIndex={14}
                 position={"fixed"}
                 width='1242px'
                 height='41px'
                 top='57px'
                 gap='256px'
                 opacity={fadeOpacity2}
-                border={"1px solid"}
             >
                 <Image
                     width='182px'
                     height='41px'
                     gap='0px'
                     src="./parallaxTop/logoWithoutTagline.png"
-                >
-                </Image>
-
+                />
                 <Flex
                     position={"absolute"}
                     width='384px'
@@ -70,9 +72,7 @@ const LogoIntro = ({ scrollY }) => {
                     left='438px'
                     gap='0px'
                     border={"1px solid"}
-                >
-                </Flex>
-
+                />
                 <Flex
                     position='absolute'
                     width='178px'
@@ -80,8 +80,7 @@ const LogoIntro = ({ scrollY }) => {
                     left='1064px'
                     gap='0px'
                     border={"1px solid"}
-                >
-                </Flex>
+                />
             </Flex>
         </Flex>
     );

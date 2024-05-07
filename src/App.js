@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import LogoIntro from './components/LogoIntro';
 import ParallaxTop from './components/ParallaxTop';
+import Intro from './components/Intro';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -36,12 +37,13 @@ function App() {
     >
       <Box
         ref={boxRef}
-        width={"1470px"}
+        width={"100%"}
         height={"1024px"}
         overflow={"scroll"}
       >
         <LogoIntro scrollY={scrollY} />
         <ParallaxTop scrollY={scrollY} />
+        <Intro />
       </Box>
     </Flex>
   );
