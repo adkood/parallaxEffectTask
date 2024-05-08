@@ -37,9 +37,10 @@ function App() {
     >
       <Box
         ref={boxRef}
-        width={"100%"}
+        width={"1455px"}
         height={"1024px"}
-        overflow={"scroll"}
+        overflowX={"hidden"}
+        overflowY={"scroll"}
       >
         <LogoIntro scrollY={scrollY} />
         <ParallaxTop scrollY={scrollY} />

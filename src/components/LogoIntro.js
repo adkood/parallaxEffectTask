@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const LogoIntro = ({ scrollY }) => {
@@ -9,17 +9,17 @@ const LogoIntro = ({ scrollY }) => {
         const newFadeOpacity1 = Math.max(0, 1 - scrollY / 600);
         setFadeOpacity1(newFadeOpacity1);
 
-        if (scrollY > 890) {
+        if (scrollY > 920) {
             setFadeOpacity2(0);
         } else {
-            const newFadeOpacity2 = Math.min(1, scrollY / 700);
+            const newFadeOpacity2 = Math.min(1, scrollY / 1000);
             setFadeOpacity2(newFadeOpacity2);
         }
     }, [scrollY]);
 
     return (
         <Flex
-            width={"100%"}
+            width={"1440px"}
             height={"1024px"}
             zIndex={14}
             position={"relative"}
@@ -50,6 +50,7 @@ const LogoIntro = ({ scrollY }) => {
                 <Image width='51.92px' height='63.79px' src="./logoIntro/mouse-scroll-wheel.png" />
             </Flex>
 
+            {/* navbar */}
             <Flex
                 position={"fixed"}
                 width='1242px'
@@ -66,20 +67,152 @@ const LogoIntro = ({ scrollY }) => {
                 />
                 <Flex
                     position={"absolute"}
+                    justifyContent={"space-between"}
                     width='384px'
                     height='26px'
                     top='7px'
                     left='438px'
                     gap='0px'
-                    border={"1px solid"}
-                />
+                >
+                    <Flex
+                        width='41px'
+                        height='26px'
+                        fontSize='16px'
+                        fontWeight='400'
+                        lineHeight='22px'
+                        textAlign='left'
+                        cursor={'pointer'}
+                        color={"#252762"}
+                    >
+                        Home
+                    </Flex>
+                    <Flex
+                        width='41px'
+                        height='26px'
+                        fontSize='16px'
+                        fontWeight='400'
+                        lineHeight='22px'
+                        textAlign='left'
+                        cursor={'pointer'}
+                        color={"#252762"}
+                    >
+                        Offer
+                    </Flex>
+                    <Flex
+                        width='41px'
+                        height='26px'
+                        fontSize='16px'
+                        fontWeight='400'
+                        lineHeight='22px'
+                        textAlign='left'
+                        cursor={'pointer'}
+                        color={"#252762"}
+                    >
+                        Pricing
+                    </Flex>
+                    <Flex
+                        width='41px'
+                        height='26px'
+                        fontSize='16px'
+                        fontWeight='400'
+                        lineHeight='22px'
+                        textAlign='left'
+                        cursor={'pointer'}
+                        color={"#252762"}
+                    >
+                        Guides
+                    </Flex>
+                    <Flex
+                        width='41px'
+                        height='26px'
+                        fontSize='16px'
+                        fontWeight='400'
+                        lineHeight='22px'
+                        textAlign='left'
+                        cursor={'pointer'}
+                        color={"#252762"}
+                    >
+                        Contact
+                    </Flex>
+                </Flex>
+
                 <Flex
                     position='absolute'
                     width='178px'
                     height='40px'
                     left='1064px'
                     gap='0px'
-                    border={"1px solid"}
+                    justifyContent={"space-between"}
+                    alignItems={"center"}
+                >
+                    <Flex
+                        width={"56px"}
+                        height={"22px"}
+                        fontSize='16px'
+                        fontWeight='400'
+                        lineHeight='22px'
+                        textAlign='left'
+                        color={"#252762"}
+                    >
+                        Sign In
+                    </Flex>
+                    <Flex
+                        width={"100px"}
+                        height={"40px"}
+                        borderRadius='20px'
+                        border={"1px solid"}
+                        bgColor={"#252762"}
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                    >
+                        <Text
+                            fontSize='16px'
+                            fontWeight='400'
+                            lineHeight='22px'
+                            color={"white"}
+                        >
+                            Sign Up
+                        </Text>
+                    </Flex>
+                </Flex>
+            </Flex>
+
+            {/* socail */}
+            <Flex
+                width='180px'
+                height='170px'
+                top='562px'
+                left='43px'
+                position={"fixed"}
+                zIndex={15}
+                opacity={fadeOpacity1}
+                direction={"column"}
+                justifyContent={"space-around"} 
+                alignItems={"center"}
+            >
+                <Box
+                    width={'180px'}
+                    height='21px'
+                    color={"white"}
+                    style={{ transform: 'rotate(90deg)' }}
+                    fontSize='18px'
+                    fontWeight='400'
+                    lineHeight='21.48px'
+                    textAlign='left'
+                >
+                    FOLLOW US
+                </Box>
+                <Image
+                    src="./parallax/instagram.png"
+                    width='34px'
+                    height='34px'
+                    padding='2px'
+                />
+                <Image
+                    src="./parallax/twitter.png"
+                    width='34px'
+                    height='34px'
+                    padding='2px'
                 />
             </Flex>
         </Flex>

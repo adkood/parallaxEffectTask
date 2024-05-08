@@ -4,8 +4,12 @@ import { useEffect, useState } from "react";
 const ParallaxTop = ({ scrollY }) => {
     const [fadeOpacity, setFadeOpacity] = useState(0);
 
-    const calculateTranslation = (speed) => {
-        return -scrollY / 2 * speed;
+    const calculateTranslation = (speed,second=0) => {
+        if(scrollY > 920) scrollY = 920;
+        if(second === 1) return -scrollY * speed * 3;
+        else if(second === 2) return -scrollY * speed * 6;
+        else if(second === -1) return scrollY * speed * 1.5;
+        return -scrollY/2 * speed;
     };
 
     useEffect(() => {
@@ -15,7 +19,7 @@ const ParallaxTop = ({ scrollY }) => {
 
 
     return (
-        <Box width={"100%"} height={"850px"} position={"relative"} zIndex={13} backgroundImage={"./parallaxTop/Grafika_bez_nazwy-2.png"}
+        <Box width={"1440px"} height={"1024px"} position={"relative"} zIndex={13} backgroundImage={"./parallaxTop/Grafika_bez_nazwy-2.png"}
             overflow={"hidden"}>
             <Image
                 width='100%'
@@ -30,14 +34,14 @@ const ParallaxTop = ({ scrollY }) => {
             {/* special */}
             <Image
                 width='100%'
-                height='1087.53px'
+                // height='1087.53px'
                 top='555px'
                 gap='0px'
                 opacity={fadeOpacity}
                 src="./parallaxTop/Grafika_bez_nazwy-14 (Traced).png"
                 position={"absolute"}
                 zIndex={11}
-                style={{ transform: `translateY(${calculateTranslation(0.8)}px)` }}
+                style={{ transform: `translateY(${calculateTranslation(0.1,1)}px)` }}
             />
 
             <Image
@@ -55,7 +59,7 @@ const ParallaxTop = ({ scrollY }) => {
 
             <Image
                 width='100%'
-                height='1082.6px'
+                // height='1082.6px'
                 top='739px'
                 gap='0px'
                 opacity={fadeOpacity}
@@ -79,7 +83,7 @@ const ParallaxTop = ({ scrollY }) => {
 
             <Image
                 width='100%'
-                height='1261.58px'
+                // height='1261.58px'
                 top='678px'
                 gap='0px'
                 opacity={fadeOpacity}
@@ -104,14 +108,14 @@ const ParallaxTop = ({ scrollY }) => {
             {/* special */}
             <Image
                 width='100%'
-                height='1501.53px'
+                // height='1501.53px'
                 top='490px'
                 gap='0px'
                 opacity={fadeOpacity}
                 src="./parallaxTop/Grafika_bez_nazwy-7 (Traced).png"
                 position={"absolute"}
                 zIndex={5}
-                style={{ transform: `translateY(${calculateTranslation(0.6)}px)` }}
+                style={{ transform: `translateY(${calculateTranslation(0.5)}px)` }}
             />
 
             <Image
@@ -125,10 +129,9 @@ const ParallaxTop = ({ scrollY }) => {
                 zIndex={5}
                 style={{ transform: `translateY(${calculateTranslation(0.4)}px)` }}
             />
-
             <Image
                 width='100%'
-                height='1852.9px'
+                // height='1852.9px'
                 top='209px'
                 gap='0px'
                 opacity={fadeOpacity}
@@ -138,16 +141,17 @@ const ParallaxTop = ({ scrollY }) => {
                 style={{ transform: `translateY(${calculateTranslation(0.5)}px)` }}
             />
 
+
             <Image
                 width='100%'
-                height='1705.72px'
-                top='427px'
+                // height='1705.72px'
+                top='127px'
                 gap='0px'
                 opacity={fadeOpacity}
                 src="./parallaxTop/Grafika_bez_nazwy-4 (Traced).png"
                 position={"absolute"}
                 zIndex={3}
-                style={{ transform: `translateY(${calculateTranslation(0.6)}px)` }}
+                style={{ transform: `translateY(${calculateTranslation(0.1,-1)}px)` }}
             />
 
             <Image
@@ -159,10 +163,10 @@ const ParallaxTop = ({ scrollY }) => {
                 src="./parallaxTop/Grafika_bez_nazwy-3 (Traced).png"
                 position={"absolute"}
                 zIndex={2}
-                style={{ transform: `translateY(${calculateTranslation(0.4)}px)` }}
+                style={{ transform: `translateY(${calculateTranslation(0.7)}px)` }}
             />
 
-            {/* <Image
+            <Image
                 width='100%'
                 height='2498.4px'
                 top='-677px'
@@ -172,21 +176,20 @@ const ParallaxTop = ({ scrollY }) => {
                 position={"absolute"}
                 zIndex={1}
                 style={{ transform: `translateY(${calculateTranslation(0.7)}px)` }}
-            /> */}
+            />
 
 
             {/* special */}
             <Image
                 width='100%'
-                height='479.91px'
+                height='458.94px'
                 position="absolute"
-                gap='0px'
                 left="-2px"
-                top="717px"
+                top="1052px"
                 opacity={fadeOpacity < 0.2 ? 0.2 : fadeOpacity}
                 src="./parallax/Grafika_bez_nazwy-17 (Traced).png"
                 zIndex={12}
-                style={{ transform: `translateY(${calculateTranslation(0.4)}px)` }}
+                style={{ transform: `translateY(${calculateTranslation(0.1,2)}px)` }}
             />
         </Box>
     );
