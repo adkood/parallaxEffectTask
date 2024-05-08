@@ -6,7 +6,7 @@ const LogoIntro = ({ scrollY }) => {
     const [fadeOpacity2, setFadeOpacity2] = useState(0);
 
     useEffect(() => {
-        const newFadeOpacity1 = Math.max(0, 1 - scrollY / 600);
+        const newFadeOpacity1 = Math.max(0, 1 - scrollY / 500);
         setFadeOpacity1(newFadeOpacity1);
 
         if (scrollY > 920) {

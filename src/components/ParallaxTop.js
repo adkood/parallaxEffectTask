@@ -6,9 +6,9 @@ const ParallaxTop = ({ scrollY }) => {
 
     const calculateTranslation = (speed,second=0) => {
         if(scrollY > 920) scrollY = 920;
-        if(second === 1) return -scrollY * speed * 3;
+        if(second === 1) return -scrollY * speed * 4;
         else if(second === 2) return -scrollY * speed * 6;
-        else if(second === -1) return scrollY * speed * 1.5;
+        else if(second === -1) return scrollY * speed * 2;
         return -scrollY/2 * speed;
     };
 
@@ -121,13 +121,13 @@ const ParallaxTop = ({ scrollY }) => {
             <Image
                 width='100%'
                 height='2498.4px'
-                top={"-928px"}
+                top={"-1528px"}
                 gap='0px'
                 opacity={fadeOpacity}
                 src="./parallaxTop/chmury5.png"
                 position={"absolute"}
                 zIndex={5}
-                style={{ transform: `translateY(${calculateTranslation(0.4)}px)` }}
+                style={{ transform: `translateY(${calculateTranslation(0.4,-1)}px)` }}
             />
             <Image
                 width='100%'
@@ -145,7 +145,7 @@ const ParallaxTop = ({ scrollY }) => {
             <Image
                 width='100%'
                 // height='1705.72px'
-                top='127px'
+                top='100px'
                 gap='0px'
                 opacity={fadeOpacity}
                 src="./parallaxTop/Grafika_bez_nazwy-4 (Traced).png"
