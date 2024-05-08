@@ -18,40 +18,58 @@ const Parallax = ({ scrollY }) => {
     useEffect(() => {
 
         let b1 = 1.0;
+        let o1 = 1.0;
         if (scrollY >= 950 && scrollY <= 965) {
             b1 = 0.93;
+            o1 = 0.97
         } else if (scrollY > 965 && scrollY <= 980) {
             b1 = 0.89;
+            o1 = 0.94
         } else if (scrollY > 980 && scrollY <= 985) {
             b1 = 0.87;
+            o1 = 0.89
         } else if (scrollY > 985 && scrollY <= 990) {
             b1 = 0.85;
+            o1 = 0.85;
         } else if (scrollY > 990 && scrollY <= 995) {
             b1 = 0.83;
+            o1 = 0.81;
         } else if (scrollY > 995 && scrollY <= 1000) {
             b1 = 0.81;
+            o1 = 0.78;
         } else if (scrollY > 1000 && scrollY <= 1010) {
             b1 = 0.8;
+            o1 = 0.75;
         } else if (scrollY > 1010 && scrollY <= 1020) {
             b1 = 0.78;
+            o1 = 0.70;
         } else if (scrollY > 1020 && scrollY <= 1030) {
             b1 = 0.75;
+            o1 = 0.65;
         } else if (scrollY > 1030 && scrollY <= 1040) {
             b1 = 0.73;
+            o1 = 0.60;
         } else if (scrollY > 1040 && scrollY <= 1050) {
             b1 = 0.7;
+            o1 = 0.55;
         } else if (scrollY > 1050 && scrollY <= 1060) {
             b1 = 0.68;
+            o1 = 0.50;
         } else if (scrollY > 1060 && scrollY <= 1070) {
             b1 = 0.65;
+            o1 = 0.45;
         } else if (scrollY > 1070 && scrollY <= 1080) {
             b1 = 0.63;
+            o1 = 0.40;
         } else if (scrollY > 1080 && scrollY <= 1090) {
             b1 = 0.6;
+            o1 = 0.38;
         } else if (scrollY > 1090) {
             b1 = 0.58;
+            o1 = 0.35;
         }
         setb1(b1);
+        setO1(o1);
 
         if (scrollY < 1110) {
             setNavbarFixed(true);
@@ -69,7 +87,7 @@ const Parallax = ({ scrollY }) => {
 
             {/* navbar */}
             <Flex
-               position={navbarFixed ? "fixed" : "absolute"}
+                position={navbarFixed ? "fixed" : "absolute"}
                 width='1242px'
                 height='41px'
                 top='57px'
@@ -214,7 +232,6 @@ const Parallax = ({ scrollY }) => {
                 opacity={fadeOpacity}
                 src="./parallaxTop/chmury1.png"
                 zIndex={13}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
             {/*  type 1 */}
@@ -240,7 +257,6 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/chmury2.png"
                 position={"absolute"}
                 zIndex={11}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
             <Image
@@ -251,7 +267,7 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/Grafika_bez_nazwy-11 (Traced).png"
                 position={"absolute"}
                 zIndex={10}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
+                style={{ filter: `brightness(${b1})` }}
             />
 
             <Image
@@ -262,7 +278,6 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/chmury3.png"
                 position={"absolute"}
                 zIndex={9}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
             <Image
@@ -273,7 +288,7 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/Grafika_bez_nazwy-9 (Traced).png"
                 position={"absolute"}
                 zIndex={8}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
+                style={{ filter: `brightness(${b1})` }}
             />
 
             <Image
@@ -285,7 +300,6 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/chmury4.png"
                 position={"absolute"}
                 zIndex={7}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
             {/* type 2 */}
@@ -312,7 +326,6 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/chmury5.png"
                 position={"absolute"}
                 zIndex={5}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
             <Image
@@ -323,7 +336,6 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/Grafika_bez_nazwy-5 (Traced).png"
                 position={"absolute"}
                 zIndex={4}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
 
@@ -335,7 +347,6 @@ const Parallax = ({ scrollY }) => {
                 src="./parallaxTop/Grafika_bez_nazwy-4 (Traced).png"
                 position={"absolute"}
                 zIndex={3}
-            // style={{ transform: `translateY(${calculateTranslation(0.2)}px)` }}
             />
 
             <Image
