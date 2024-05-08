@@ -1,9 +1,11 @@
 import { Flex, Box, Image, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
-const ParallaxTop = ({ scrollY }) => {
+const Parallax = ({ scrollY }) => {
     const [fadeOpacity, setFadeOpacity] = useState(0);
+    const [navbarFixed, setNavbarFixed] = useState(true);
     const [b1, setb1] = useState(0);
+    const [o1, setO1] = useState(1);
 
     const calculateTranslation = (speed, second = 0) => {
         if (scrollY > 1110) scrollY = 1110;
@@ -51,22 +53,26 @@ const ParallaxTop = ({ scrollY }) => {
         }
         setb1(b1);
 
+        if (scrollY < 1110) {
+            setNavbarFixed(true);
+        } else {
+            setNavbarFixed(false);
+        }
+
         const newFadeOpacity = Math.min(1, scrollY / 700);
         setFadeOpacity(newFadeOpacity);
     }, [scrollY]);
 
     return (
-        <Box width={"1440px"} height={"1024px"} alignItems={"center"} position={"relative"} zIndex={14} backgroundImage={"./parallaxTop/Grafika_bez_nazwy-2.png"}
+        <Flex width={"1440px"} height={"1024px"} justifyContent={"center"} position={"relative"} zIndex={14} backgroundImage={"./parallaxTop/Grafika_bez_nazwy-2.png"}
             overflow={"hidden"} >
 
             {/* navbar */}
             <Flex
-                position={"fixed"}
+               position={navbarFixed ? "fixed" : "absolute"}
                 width='1242px'
                 height='41px'
                 top='57px'
-                // left={"99px"}
-                gap='256px'
                 opacity={fadeOpacity}
                 zIndex={14}
             >
@@ -325,7 +331,7 @@ const ParallaxTop = ({ scrollY }) => {
                 width='100%'
                 top='427px'
                 gap='0px'
-                opacity={fadeOpacity}
+                opacity={o1}
                 src="./parallaxTop/Grafika_bez_nazwy-4 (Traced).png"
                 position={"absolute"}
                 zIndex={3}
@@ -355,8 +361,8 @@ const ParallaxTop = ({ scrollY }) => {
                 zIndex={1}
             />
 
-        </Box>
+        </Flex>
     );
 }
 
-export default ParallaxTop;
+export default Parallax;

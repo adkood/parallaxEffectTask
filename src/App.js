@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import LogoIntro from './components/LogoIntro';
-import ParallaxTop from './components/ParallaxTop';
+import Parallax from './components/Parallax';
 import Intro from './components/Intro';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
         overflowY={"scroll"}
       >
         <LogoIntro scrollY={scrollY} />
-        <ParallaxTop scrollY={scrollY} />
+        <Parallax scrollY={scrollY} />
         <Intro />
       </Box>
     </Flex>
