@@ -182,7 +182,7 @@ const ParallaxTop = ({ scrollY }) => {
             {/* special */}
             <Image
                 width='100%'
-                height='458.94px'
+                height='558.94px'
                 position="absolute"
                 left="-2px"
                 top="1052px"

@@ -19,16 +19,217 @@ const Intro = () => {
             >
             </Flex>
 
+            {/* dots */}
+
+            <Image
+                position={"absolute"}
+                width='23px'
+                height='23px'
+                top='799px'
+                left='708px'
+                border='1px 0px 0px 0px'
+                src="./intro/Ellipse 2219.png"
+            />
+
+            <Image
+                position={"absolute"}
+                width='23px'
+                height='23px'
+                top='1461px'
+                left='708px'
+                border='1px 0px 0px 0px'
+                src="./intro/Ellipse 2219.png"
+            />
+
+            <Image
+                position={"absolute"}
+                width='23px'
+                height='23px'
+                top='2138px'
+                left='708px'
+                border='1px 0px 0px 0px'
+                src="./intro/Ellipse 2219.png"
+            />
+
+            <Image
+                position={"absolute"}
+                width='23px'
+                height='23px'
+                top='2823px'
+                left='708px'
+                border='1px 0px 0px 0px'
+                src="./intro/Ellipse 2219.png"
+            />
+
+            <Image
+                position={"absolute"}
+                width='23px'
+                height='23px'
+                top='4998px'
+                left='708px'
+                border='1px 0px 0px 0px'
+                src="./intro/Ellipse 2219.png"
+            />
+
+            <Image
+                position={"absolute"}
+                width='7px'
+                height='7px'
+                top='5006px'
+                left='716px'
+                border='1px 0px 0px 0px'
+                src="./intro/Rectangle 89.png"
+            />
+
+
             {/* first */}
             <Flex
+                direction={"column"}
                 position={"absolute"}
                 width='234px'
                 height='372px'
                 top='274px'
                 left='72px'
                 gap='24px'
-                border={"1px solid"}
+                alignItems={"center"}
             >
+                <Box
+                    width='185px'
+                    height='42px'
+                    padding='9px 32px 9px 32px'
+                    gap='10px'
+                    borderRadius='50px'
+                    boxShadow='0px 4px 4px 0px #00000040'
+                    bgColor={"#252762"}
+                    cursor={"pointer"}
+                >
+                    <Text
+                        width='100%'
+                        height='24px'
+                        fontSize='20px'
+                        fontWeight='600'
+                        lineHeight='23.87px'
+                        textAlign='left'
+                        color={"white"}
+                    >
+                        All Products
+                    </Text>
+                </Box>
+
+                <Box
+                    width='196px'
+                    height='42px'
+                    padding='9px 32px 9px 32px'
+                    gap='10px'
+                    borderRadius='50px'
+                    border={"1px solid #252762"}
+                    boxShadow='0px 4px 4px 0px #00000040'
+                    cursor={"pointer"}
+                >
+                    <Text
+                        width='100%'
+                        height='24px'
+                        fontSize='20px'
+                        fontWeight='600'
+                        lineHeight='23.87px'
+                        textAlign='left'
+                        color="#252762"
+                    >
+                        Health Sector
+                    </Text>
+                </Box>
+
+                <Box
+                    width='207px'
+                    height='42px'
+                    padding='9px 32px 9px 32px'
+                    gap='10px'
+                    borderRadius='50px'
+                    border={"1px solid #252762"}
+                    boxShadow='0px 4px 4px 0px #00000040'
+                    cursor={"pointer"}
+                >
+                    <Text
+                        width='100%'
+                        height='24px'
+                        fontSize='20px'
+                        fontWeight='600'
+                        lineHeight='23.87px'
+                        textAlign='left'
+                        color="#252762"
+                    >
+                        Petcare Sector
+                    </Text>
+                </Box>
+
+                <Box
+                    width='262px'
+                    height='42px'
+                    padding='9px 32px 9px 32px'
+                    gap='10px'
+                    border={"1px solid #252762"}
+                    borderRadius='50px'
+                    boxShadow='0px 4px 4px 0px #00000040'
+                    cursor={"pointer"}
+                >
+                    <Text
+                        width='100%'
+                        height='24px'
+                        fontSize='20px'
+                        fontWeight='600'
+                        lineHeight='23.87px'
+                        textAlign='left'
+                        color="#252762"
+                    >
+                        Construction Sector
+                    </Text>
+                </Box>
+
+                <Box
+                    width='190px'
+                    height='42px'
+                    padding='9px 32px 9px 32px'
+                    gap='10px'
+                    border={"1px solid #252762"}
+                    borderRadius='50px'
+                    boxShadow='0px 4px 4px 0px #00000040'
+                    cursor={"pointer"}
+                >
+                    <Text
+                        width='100%'
+                        height='24px'
+                        fontSize='20px'
+                        fontWeight='600'
+                        lineHeight='23.87px'
+                        textAlign='left'
+                        color="#252762"
+                    >
+                        Event Sector
+                    </Text>
+                </Box>
+
+                <Box
+                    width='264px'
+                    height='42px'
+                    padding='9px 32px 9px 32px'
+                    gap='10px'
+                    border={"1px solid #252762"}
+                    borderRadius='50px'
+                    boxShadow='0px 4px 4px 0px #00000040'
+                    cursor={"pointer"}
+                >
+                    <Text
+                        width='100%'
+                        height='24px'
+                        fontSize='20px'
+                        fontWeight='600'
+                        lineHeight='23.87px'
+                        textAlign='left'
+                        color="#252762"
+                    >
+                        Management Sector
+                    </Text>
+                </Box>
             </Flex>
 
             <Flex
@@ -71,12 +272,12 @@ const Intro = () => {
                 <Text
                     width='257px'
                     height='264px'
-                    fontSize='19px'
+                    fontSize='20px'
                     fontWeight='400'
                     lineHeight='23.87px'
                     textAlign='left'
                 >
-                    Egohet kaplatuna. Ana. Id. Psykotyp nötigt. Nenat. Isam. Teleligt supravanade. Antere dekas. Reangar. Snackis but. Dekang trejon. Virad. Diar naning. Donera avis. Lånegarderob nede. Deepfake reaform. Tetisävis e-learning. Kroviling nyvis. Gardinhängarjobb kyhet. Spement. 
+                    Egohet kaplatuna. Ana. Id. Psykotyp nötigt. Nenat. Isam. Teleligt supravanade. Antere dekas. Reangar. Snackis but. Dekang trejon. Virad. Diar naning. Donera avis. Lånegarderob nede. Deepfake reaform. Tetisävis e-learning. Kroviling nyvis. Gardinhängarjobb kyhet. Spement.
                 </Text>
             </Flex>
 
@@ -92,9 +293,8 @@ const Intro = () => {
                 fontWeight='800'
                 lineHeight='53.7px'
                 textAlign='left'
-                border={"1px solid"}
             >
-
+                Construction  Sector
             </Text>
 
             <Text
@@ -107,8 +307,8 @@ const Intro = () => {
                 fontWeight='400'
                 lineHeight='35.8px'
                 textAlign='left'
-                border={"1px solid"}
             >
+                Cementing Dreams, Crafting Futures": At Connect, our success is built on the dedication of every member of our team, from skilled labourers to seasoned professionals...
             </Text>
 
             <Flex
@@ -121,6 +321,7 @@ const Intro = () => {
                 border='1px solid'
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
+                cursor={"pointer"}
             >
                 <Image
                     src="./intro/grommet-icons_expand.png"
@@ -129,14 +330,14 @@ const Intro = () => {
                     padding='0.71px'
                 />
                 <Box
-                    width='128px'
+                    width='130px'
                     height='30px'
-                    fontSize='25px'
+                    fontSize='23px'
                     fontWeight='400'
                     lineHeight='29.83px'
                     textAlign='left'
-                    border="1px solid"
                 >
+                    More details
                 </Box>
             </Flex>
 
@@ -144,10 +345,14 @@ const Intro = () => {
                 width='645px'
                 height='528px'
                 top='866px'
-                left='717px'
+                left='714px'
                 position={"absolute"}
-                border={"1px solid"}
             >
+                <Image
+                    width={"100%"}
+                    height={"100%"}
+                    src="./intro/Frame 1171275616.svg"
+                />
             </Flex>
 
             {/* third */}
@@ -162,9 +367,8 @@ const Intro = () => {
                 fontWeight='800'
                 lineHeight='53.7px'
                 textAlign='left'
-                border={"1px solid"}
             >
-
+                Healthcare Sector
             </Text>
 
             <Text
@@ -177,8 +381,9 @@ const Intro = () => {
                 fontWeight='400'
                 lineHeight='35.8px'
                 textAlign='left'
-                border={"1px solid"}
             >
+                “Healing Hearts, Enriching Lives”.
+                At Connect Healthcare, we forge bonds between caregivers, infusing empathy and unity. Our platform fosters heartfelt connections among...
             </Text>
 
             <Flex
@@ -191,6 +396,8 @@ const Intro = () => {
                 border='1px solid'
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
+                cursor={"pointer"}
+
             >
                 <Image
                     src="./intro/grommet-icons_expand.png"
@@ -199,14 +406,14 @@ const Intro = () => {
                     padding='0.71px'
                 />
                 <Box
-                    width='128px'
+                    width='130px'
                     height='30px'
-                    fontSize='25px'
+                    fontSize='23px'
                     fontWeight='400'
                     lineHeight='29.83px'
                     textAlign='left'
-                    border="1px solid"
                 >
+                    More details
                 </Box>
             </Flex>
 
@@ -216,8 +423,12 @@ const Intro = () => {
                 top='1551px'
                 left='88px'
                 position={"absolute"}
-                border={"1px solid"}
             >
+                <Image
+                    width={"100%"}
+                    height={"100%"}
+                    src="./intro/Frame 1171275617.svg"
+                />
             </Flex>
 
             {/* fourth */}
@@ -232,9 +443,8 @@ const Intro = () => {
                 fontWeight='800'
                 lineHeight='53.7px'
                 textAlign='left'
-                border={"1px solid"}
             >
-
+                Entertainment Sector
             </Text>
 
             <Text
@@ -247,8 +457,8 @@ const Intro = () => {
                 fontWeight='400'
                 lineHeight='35.8px'
                 textAlign='left'
-                border={"1px solid"}
             >
+                At Connect Entertainment, we're igniting excitement by assembling a dynamic team of talents and together, we'll light up the stage and leave audiences in awe...
             </Text>
 
             <Flex
@@ -261,6 +471,7 @@ const Intro = () => {
                 border='1px solid'
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
+                cursor={"pointer"}
             >
                 <Image
                     src="./intro/grommet-icons_expand.png"
@@ -269,14 +480,14 @@ const Intro = () => {
                     padding='0.71px'
                 />
                 <Box
-                    width='128px'
+                    width='130px'
                     height='30px'
-                    fontSize='25px'
+                    fontSize='23px'
                     fontWeight='400'
                     lineHeight='29.83px'
                     textAlign='left'
-                    border="1px solid"
                 >
+                    More details
                 </Box>
             </Flex>
 
@@ -284,10 +495,14 @@ const Intro = () => {
                 width='645px'
                 height='528px'
                 top='2228px'
-                left='717px'
+                left='714px'
                 position={"absolute"}
-                border={"1px solid"}
             >
+                <Image
+                    width={"100%"}
+                    height={"100%"}
+                    src="./intro/Frame 1171275618.svg"
+                />
             </Flex>
 
             {/* fifth */}
@@ -301,9 +516,8 @@ const Intro = () => {
                 fontWeight='800'
                 lineHeight='53.7px'
                 textAlign='left'
-                border={"1px solid"}
             >
-
+                Event Sector
             </Text>
 
             <Text
@@ -316,8 +530,8 @@ const Intro = () => {
                 fontWeight='400'
                 lineHeight='35.8px'
                 textAlign='left'
-                border={"1px solid"}
             >
+                At Connect Entertainment, we're igniting excitement by assembling a dynamic team of talents and together, we'll light up the stage and leave audiences in awe...
             </Text>
 
             <Flex
@@ -330,6 +544,7 @@ const Intro = () => {
                 border='1px solid'
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
+                cursor={"pointer"}
             >
                 <Image
                     src="./intro/grommet-icons_expand.png"
@@ -338,14 +553,14 @@ const Intro = () => {
                     padding='0.71px'
                 />
                 <Box
-                    width='128px'
+                    width='130px'
                     height='30px'
-                    fontSize='25px'
+                    fontSize='23px'
                     fontWeight='400'
                     lineHeight='29.83px'
                     textAlign='left'
-                    border="1px solid"
                 >
+                    More details
                 </Box>
             </Flex>
 
@@ -355,8 +570,12 @@ const Intro = () => {
                 top='2913px'
                 left='88px'
                 position={"absolute"}
-                border={"1px solid"}
             >
+                <Image
+                    width={"100%"}
+                    height={"100%"}
+                    src="./intro/Frame 1171275619.svg"
+                />
             </Flex>
 
             {/* sixth */}
@@ -371,9 +590,8 @@ const Intro = () => {
                 fontWeight='800'
                 lineHeight='53.7px'
                 textAlign='left'
-                border={"1px solid"}
             >
-
+                Home Sector
             </Text>
 
             <Text
@@ -386,8 +604,8 @@ const Intro = () => {
                 fontWeight='400'
                 lineHeight='35.8px'
                 textAlign='left'
-                border={"1px solid"}
             >
+                At Connect Entertainment, we're igniting excitement by assembling a dynamic team of talents and together, we'll light up the stage and leave audiences in awe...
             </Text>
 
             <Flex
@@ -400,6 +618,7 @@ const Intro = () => {
                 border='1px solid'
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
+                cursor={"pointer"}
             >
                 <Image
                     src="./intro/grommet-icons_expand.png"
@@ -408,14 +627,14 @@ const Intro = () => {
                     padding='0.71px'
                 />
                 <Box
-                    width='128px'
+                    width='130px'
                     height='30px'
-                    fontSize='25px'
+                    fontSize='23px'
                     fontWeight='400'
                     lineHeight='29.83px'
                     textAlign='left'
-                    border="1px solid"
                 >
+                    More details
                 </Box>
             </Flex>
 
@@ -423,10 +642,14 @@ const Intro = () => {
                 width='645px'
                 height='528px'
                 top='3598px'
-                left='717px'
+                left='713px'
                 position={"absolute"}
-                border={"1px solid"}
             >
+                <Image
+                    width={"100%"}
+                    height={"100%"}
+                    src="./intro/Frame 1171275623.svg"
+                />
             </Flex>
 
             {/* seventh */}
@@ -441,9 +664,8 @@ const Intro = () => {
                 fontWeight='800'
                 lineHeight='53.7px'
                 textAlign='left'
-                border={"1px solid"}
             >
-
+                Pets Sector
             </Text>
 
             <Text
@@ -456,8 +678,8 @@ const Intro = () => {
                 fontWeight='400'
                 lineHeight='35.8px'
                 textAlign='left'
-                border={"1px solid"}
             >
+                At Connect Entertainment, we're igniting excitement by assembling a dynamic team of talents and together, we'll light up the stage and leave audiences in awe...
             </Text>
 
             <Flex
@@ -470,6 +692,7 @@ const Intro = () => {
                 border='1px solid'
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
+                cursor={"pointer"}
             >
                 <Image
                     src="./intro/grommet-icons_expand.png"
@@ -478,14 +701,14 @@ const Intro = () => {
                     padding='0.71px'
                 />
                 <Box
-                    width='128px'
+                    width='130px'
                     height='30px'
-                    fontSize='25px'
+                    fontSize='23px'
                     fontWeight='400'
                     lineHeight='29.83px'
                     textAlign='left'
-                    border="1px solid"
                 >
+                    More details
                 </Box>
             </Flex>
 
@@ -495,14 +718,19 @@ const Intro = () => {
                 top='4283px'
                 left='88px'
                 position={"absolute"}
-                border={"1px solid"}
             >
+                <Image
+                    width={"100%"}
+                    height={"100%"}
+                    src="./intro/Frame 1171275627.svg"
+                />
             </Flex>
 
             {/* last */}
             <Flex
                 position={"absolute"}
-                border={"1px solid"}
+                justifyContent={"center"}
+                alignItems={"center"}
                 width='1268px'
                 height='390px'
                 top='5025px'
@@ -510,11 +738,68 @@ const Intro = () => {
                 padding='65px 69px 65.37px 69px'
                 gap='0px'
                 borderRadius='15px'
-                boxShadow='0px 4px 4px 0px #00000040 inset'
+                boxShadow=' 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25)'
             >
+                <Flex
+                    width='1130px'
+                    height='259.63px'
+                    justifyContent={"space-between"}
+                    alignItems={"center"}
+                >
+                    <Flex
+                        width='641px'
+                        height='219px'
+                        direction={"column"}
+                        justifyContent={"space-between"}
+                    >
+                        <Flex
+                            width='350px'
+                            height='42px'
+                            padding='9px 32px 9px 32px'
+                            gap='10px'
+                            borderRadius='50px'
+                            bgColor={"#252762"}
+                        >
+                            <Text
+                                width='350px'
+                                height='24px'
+                                fontSize='20px'
+                                fontWeight='600'
+                                lineHeight='23.87px'
+                                textAlign='left'
+                                color={"white"}
+                            >
+                                CONNECT Privacy Day 2024
+                            </Text>
+                        </Flex>
 
+                        <Text
+                            width='641px'
+                            height='130px'
+                            fontSize='50px'
+                            fontWeight='600'
+                            lineHeight='59.67px'
+                            textAlign='left'
+                        >
+                            Three important measures to protect user information
+                        </Text>
+
+                    </Flex>
+
+                    <Flex
+                        width='258px'
+                        height='259.63px'
+                    >
+                        <Image
+                            width={"100%"}
+                            height={"100%"}
+                            src="./intro/Illustration.svg"
+                        />
+                    </Flex>
+
+                </Flex>
             </Flex>
-        </Flex>
+        </Flex >
     );
 }
 
